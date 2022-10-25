@@ -7,9 +7,10 @@ import { Ranking } from './screens/Ranking';
 import { SearchResult } from './screens/SearchResult';
 import { WIki } from './screens/WIki';
 
+
 export default function App() {
   return (
-    <View style={styles.container}>
+    <View >
       <Text>Open up App.tsx to start working on your app!</Text>
       <StatusBar style="auto" />
       <Home />
@@ -22,11 +23,3 @@ export default function App() {
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

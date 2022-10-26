@@ -1,7 +1,6 @@
-import {Routes} from './Routes';
+import { Routes } from "./Routes";
+import { Login } from "./screens/Login";
 
 export default function App() {
-  return (
-   <Routes />
-  );
+  return <Login />;
 }

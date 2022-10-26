@@ -20,16 +20,6 @@ export function Routes() {
     <NavigationContainer>
       <Tab.Navigator
         initialRouteName="HomePage"
-        /*screenOptions={{
-          headerShown: false,
-          tabBarStyle: {
-            backgroundColor: "#FEAE00",
-            height: 50,
-          },
-          tabBarIconStyle: {
-            color: "#fff",
-          },
-        }}*/
         screenOptions={({ route }) => ({
           headerShown: false,
           tabBarStyle: {

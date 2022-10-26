@@ -1,49 +1,41 @@
+//Libraries
 import { Keyboard, Platform, TouchableWithoutFeedback } from "react-native";
-
+//Styles
 import {
   Container,
-  Title,
-  TexInputView,
-  Input,
-  Button,
-  TextButton,
   Form,
-  Logo,
   LinkText,
   Footer,
 } from "./styles";
+
+//Compornentes
+import{Input} from '../../components/Input'
+import { Logo } from "../../components/Logo";
+import { Button } from "../../components/Button";
 
 export function Login() {
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
       <Container>
-        <Logo source={require("../../assets/logo.png")} />
+        <Logo />
+        
         <Form behavior={Platform.OS === "ios" ? "padding" : "height"}>
-          <Title>Endereço de Email</Title>
-
-          <TexInputView>
-            <Input
-              placeholder="seuemail@exemplo.com"
-              placeholderTextColor="#d18f00"
-              keyboardType="email-address"
-            />
-          </TexInputView>
-
-          <Title>Senha</Title>
-
-          <TexInputView>
-            <Input
-              placeholder="*******"
-              type="Password"
-              secureTextEntry
-              placeholderTextColor="#d18f00"
-            />
-          </TexInputView>
+          <Input
+            title="Endereço de Email" 
+            placeholder="seuemail@exemplo.com"
+            keyboardType="email-address"
+          /> 
+          <Input
+            title="Senha" 
+            placeholder="*****************"
+            secureTextEntry
+          />    
         </Form>
 
-        <Button>
-          <TextButton>Entrar</TextButton>
-        </Button>
+        <Button 
+         value="Entrar"
+        />
+        
 
         <Footer>
           <LinkText>Esqueceu sua Senha? </LinkText>

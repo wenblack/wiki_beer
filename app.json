@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "wiki_beer",
-    "slug": "wiki_beer",
+    "name": "Wiki Beer",
+    "slug": "Wiki-Beer",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

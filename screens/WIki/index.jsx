@@ -1,9 +1,10 @@
 import { View , Text} from 'react-native';
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export function WIki() {
   return (
-    <View >
-        <Text>WIki</Text>
-    </View>
+    <SafeAreaView>
+      <Text>WIki</Text>
+    </SafeAreaView>
   );
 }

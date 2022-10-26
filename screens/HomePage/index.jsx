@@ -1,10 +1,10 @@
-import { View, Text } from 'react-native';
+import { View, Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-export function Account() {
+export function HomePage() {
   return (
     <SafeAreaView>
-      <Text>Account</Text>
+      <Text>HOme</Text>
     </SafeAreaView>
   );
 }

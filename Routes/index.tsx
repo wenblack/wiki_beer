@@ -1,41 +1,88 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Ionicons from 'react-native-vector-icons/Ionicons';
+import {
+  Ionicons,
+  Octicons,
+  AntDesign,
+  FontAwesome5,
+  Feather,
+} from "@expo/vector-icons";
 
-import { Home } from '../screens/Home';
-import { Ranking } from '../screens/Ranking';
-import { WIki } from '../screens/WIki';
-import { Account } from '../screens/Account';
+import { HomePage } from "../screens/HomePage";
+import { Ranking } from "../screens/Ranking";
+import { WIki } from "../screens/WIki";
+import { Account } from "../screens/Account";
 
 const Tab = createBottomTabNavigator();
 
 export function Routes() {
   return (
-    <NavigationContainer >
+    <NavigationContainer>
       <Tab.Navigator
-        screenOptions={({ route }) => ({
-          tabBarIcon: ({ focused, color, size }) => {
-            let iconName;
-
-            if (route.name === 'Home') {
-              iconName = focused
-                ? 'ios-information-circle'
-                : 'ios-information-circle-outline';
-            } else if (route.name === 'Settings') {
-              iconName = focused ? 'ios-list-box' : 'ios-list';
-            }
-
-            // You can return any component that you like here!
-            return <Ionicons name='radio-button-off' size={36} color={color} />;
+        initialRouteName="HomePage"
+        /*screenOptions={{
+          headerShown: false,
+          tabBarStyle: {
+            backgroundColor: "#FEAE00",
+            height: 50,
           },
-          tabBarActiveTintColor: 'tomato',
-          tabBarInactiveTintColor: 'gray',
+          tabBarIconStyle: {
+            color: "#fff",
+          },
+        }}*/
+        screenOptions={({ route }) => ({
+          headerShown: false,
+          tabBarStyle: {
+            backgroundColor: "#FEAE00",
+            height: 50,
+          },
+          tabBarIconStyle: {
+            color: "#fff",
+          },
+          tabBarIcon: ({ focused, color, size }) => {
+            if (route.name === "HomePage") {
+              return <Octicons name="home" size={32} color={color} />;
+            } else if (route.name === "Ranking") {
+              return <AntDesign name="Trophy" size={32} color={color} />;
+            } else if (route.name === "WIki") {
+              return <FontAwesome5 name="newspaper" size={32} color={color} />;
+            } else if (route.name === "Account") {
+              return <Feather name={"user"} size={32} color={color} />;
+            }
+          },
+          tabBarInactiveTintColor: "#202024",
+          tabBarActiveTintColor: "#fff",
         })}
       >
-        <Tab.Screen name="Home" component={Home} />
-        <Tab.Screen name="Ranking" component={Ranking} />
-        <Tab.Screen name="WIki" component={WIki} />
-        <Tab.Screen name="Account" component={Account} />
+        <Tab.Screen
+          name="HomePage"
+          component={HomePage}
+          options={{
+            tabBarShowLabel: false,
+            tabBarHideOnKeyboard: true,
+          }}
+        />
+        <Tab.Screen
+          name="Ranking"
+          component={Ranking}
+          options={{
+            tabBarShowLabel: false,
+          }}
+        />
+        <Tab.Screen
+          name="WIki"
+          component={WIki}
+          options={{
+            tabBarShowLabel: false,
+          }}
+        />
+        <Tab.Screen
+          name="Account"
+          component={Account}
+          options={{
+            tabBarShowLabel: false,
+          }}
+        />
       </Tab.Navigator>
     </NavigationContainer>
   );

@@ -1,5 +1,5 @@
 //Libraries
-import { Keyboard, Platform, TouchableWithoutFeedback } from "react-native";
+import { Platform } from "react-native";
 //Styles
 import {
   Container,
@@ -8,7 +8,7 @@ import {
   Footer,
 } from "./styles";
 
-//Compornentes
+//Components
 import{Input} from '../../components/Input'
 import { Logo } from "../../components/Logo";
 import { Button } from "../../components/Button";
@@ -21,23 +21,22 @@ export function Login() {
       <Container>
         <Logo />
 
-        <Form behavior={Platform.OS === "ios" ? "padding" : "height"}>
+        <Form
+          behavior={Platform.OS === "ios" || "android" ? "padding" : "height"}
+        >
           <Input
-            title="Endereço de Email" 
+            title="Endereço de Email"
             placeholder="seuemail@exemplo.com"
             keyboardType="email-address"
-          /> 
+          />
           <Input
-            title="Senha" 
+            title="Senha"
             placeholder="*****************"
             secureTextEntry
-          />    
+          />
         </Form>
 
-        <Button 
-         value="Entrar"
-        />
-        
+        <Button value="Entrar" />
 
         <Footer>
           <LinkText>Esqueceu sua Senha? </LinkText>

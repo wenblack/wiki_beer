@@ -16,19 +16,17 @@ interface InputProps {
 
   export function Input({title,placeholder,keyboardType,secureTextEntry}:InputProps) {
     return (
-        <Container>
-            <Label>
-                {title}
-            </Label>
+      <Container>
+        <Label>{title}</Label>
 
-            <TexInputContainer>     
-              <InputText
-                placeholder={placeholder}
-                placeholderTextColor="#d18f00"
-                keyboardType={keyboardType}
-                secureTextEntry={secureTextEntry}
-              />
-            </TexInputContainer>
-      </ Container>
+        <TexInputContainer>
+          <InputText
+            placeholder={placeholder}
+            placeholderTextColor="#7C7C8A"
+            keyboardType={keyboardType}
+            secureTextEntry={secureTextEntry}
+          />
+        </TexInputContainer>
+      </Container>
     );
   }

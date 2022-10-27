@@ -8,7 +8,7 @@ align-items: flex-start;
 
 //Input Style
 export const Label = styled.Text`
-  color: #d18f00;
+  color: #feae00;
   font-size: 18px;
   margin-bottom: 18px;
 `;

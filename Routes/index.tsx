@@ -1,12 +1,6 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import {
-  Ionicons,
-  Octicons,
-  AntDesign,
-  FontAwesome5,
-  Feather,
-} from "@expo/vector-icons";
+import { Octicons, AntDesign, FontAwesome5, Feather } from "@expo/vector-icons";
 
 import { HomePage } from "../screens/HomePage";
 import { Ranking } from "../screens/Ranking";

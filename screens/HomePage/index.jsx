@@ -1,10 +1,11 @@
-import { View, Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { Header } from "../../components/Header";
+import {Container} from './styles'
 
 export function HomePage() {
   return (
-    <SafeAreaView>
-      <Text>HOme</Text>
-    </SafeAreaView>
+    <Container>
+      <Header></Header>
+    </Container>
   );
 }

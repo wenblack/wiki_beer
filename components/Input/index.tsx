@@ -4,9 +4,9 @@ import {
     Label,
     InputText
   } from "./styles";
-import { Octicons, AntDesign, FontAwesome5, Feather } from "@expo/vector-icons";
+import {Icon, IconProps} from '../Icon'
 
-interface InputProps {
+interface InputProps extends IconProps {
     title :string;
     placeholder:string;
     placeholderTextColor?:string;
@@ -23,7 +23,7 @@ interface InputProps {
         <Label>{title}</Label>
 
         <TexInputContainer>
-        <Feather name={iconName} size={16} color='#7C7C8A' style={{marginLeft:16}}></Feather>
+        <Icon iconName={iconName} iconSize={16} iconColor='#7C7C8A' iconStyle={{marginLeft:16}}></Icon>
           <InputText
             placeholder={placeholder}
             placeholderTextColor="#7C7C8A"

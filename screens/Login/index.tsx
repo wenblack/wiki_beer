@@ -28,11 +28,13 @@ export function Login() {
             title="Endereço de Email"
             placeholder="seuemail@exemplo.com"
             keyboardType="email-address"
+            iconName="mail"
           />
           <Input
             title="Senha"
             placeholder="*****************"
             secureTextEntry
+            iconName='lock'
           />
         </Form>
 

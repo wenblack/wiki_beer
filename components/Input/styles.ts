@@ -14,6 +14,7 @@ export const Label = styled.Text`
 `;
 export const TexInputContainer = styled.View`
   display: flex;
+  flex-direction: row;
   background: #fff;
   border: 2px solid;
   border-color: #feae00;
@@ -23,6 +24,9 @@ export const TexInputContainer = styled.View`
   min-height: 40px;
   max-height: 48px;
   margin-bottom: 18px;
+  align-items: center; 
+  justify-content: center;
+  padding-left: 16px;
 `;
 
 export const InputText = styled.TextInput`

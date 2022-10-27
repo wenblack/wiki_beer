@@ -5,7 +5,7 @@ export const ContainerView = styled.SafeAreaView `
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 35px;
+    margin-top: 3%;
 `
 export const SearchView = styled.View `
     display: flex;

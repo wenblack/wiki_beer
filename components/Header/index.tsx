@@ -1,10 +1,12 @@
 import { Text } from 'react-native';
+import { BeerImage } from '../BeerImage';
 import { Icon } from '../Icon';
 import {ContainerView, SearchView} from './styles'
 
 
 export function Header() {
   return (
+    <>
     <ContainerView >
         <SearchView>
           <Icon 
@@ -26,5 +28,7 @@ export function Header() {
           }}
           />
     </ContainerView>
+    <BeerImage></BeerImage>
+    </>
   );
 }

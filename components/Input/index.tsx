@@ -23,7 +23,7 @@ interface InputProps {
         <Label>{title}</Label>
 
         <TexInputContainer>
-        <Feather name={iconName} size={16} color='#7C7C8A'></Feather>
+        <Feather name={iconName} size={16} color='#7C7C8A' style={{marginLeft:16}}></Feather>
           <InputText
             placeholder={placeholder}
             placeholderTextColor="#7C7C8A"

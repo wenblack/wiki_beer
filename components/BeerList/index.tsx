@@ -11,34 +11,39 @@ const styleSvg = {
     borderColor:'rgba(128, 128, 128, 0.60)',
     borderRadius:15,
     padding:15,
-    marginRight :15
+    marginRight :15,
   }
 export function BeerList() {        
     return (
-        < ScrollListBeerSm  horizontal >
+        < ScrollListBeerSm  horizontal  >
             <Heineken 
-                svgHeight={129}
-                svgWidth={147}
+                svgHeight='20%'
+                svgWidth='10%'
                 style={styleSvg}
             />
             <Stella 
-                svgHeight={129}
-                svgWidth={147}
+                svgHeight='20%'
+                svgWidth='10%'
                 style={styleSvg}
             />
             <Becks
-                svgHeight={129}
-                svgWidth={147}
+                svgHeight='20%'
+                svgWidth='10%'
                 style={styleSvg} 
             />
             <Amstel
-                svgHeight={129}
-                svgWidth={147}
+                svgHeight='20%'
+                svgWidth='10%'
                 style={styleSvg} 
             />
             <Eisenbahn 
-                svgHeight={129}
-                svgWidth={147}
+                svgHeight='20%'
+                svgWidth='10%'
+                style={styleSvg}
+            />
+            <Heineken 
+                svgHeight='20%'
+                svgWidth='10%'
                 style={styleSvg}
             />
         </ScrollListBeerSm>

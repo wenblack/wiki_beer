@@ -3,10 +3,10 @@ import { BeerList } from '../BeerList';
 import { Button } from '../Button';
 
 import { Icon } from '../Icon';
-import {ContainerView, SearchView, ButtonContainer} from './styles'
+import {ContainerView, SearchView, ButtonContainer, ButtonView} from './styles'
 
 
-export function Header() {
+export function  Header() {
   return (
     <>
     <ContainerView >
@@ -31,14 +31,24 @@ export function Header() {
           />
     </ContainerView>
     
+
     <ButtonContainer>
-      <Button value='LAGER' style={{width:130}}/> 
-      <Button value='TRIGO' style={{width:130}}/>
+    <ButtonView>
+    <Button value='LAGER' style={{marginTop:22}}/> 
+    </ButtonView>
+      <ButtonView>
+      <Button value='TRIGO' style={{marginTop:22}} />
+      </ButtonView>
+      
     </ButtonContainer>
          
-    <ButtonContainer>
-      <Button value='IPA' style={{width:130}}/> 
-      <Button value='SESSION IPA' style={{width:130}}/>
+    <ButtonContainer >
+      <ButtonView >
+        <Button value='IPA' style={{marginTop:16}}/> 
+      </ButtonView>
+      <ButtonView>
+      <Button value='SESSION IPA'  style={{marginTop:16}}/>
+      </ButtonView>
     </ButtonContainer>
     
     <BeerList></BeerList>

@@ -3,9 +3,9 @@ import styled from "styled-components/native";
 export const ContainerView = styled.SafeAreaView `
     display: flex;
     flex-direction: row;
+    margin-top: 7%;
     align-items: center;
     justify-content: center;
-    margin-top: 3%;
 `
 export const SearchView = styled.View `
     display: flex;
@@ -26,5 +26,9 @@ export const ButtonContainer = styled.View `
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 32px;
+    box-sizing: border-box;
+    gap: 5%;
+`
+export const ButtonView = styled.View `
+    width: 40%;
 `

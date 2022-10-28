@@ -38,7 +38,7 @@ export function Login() {
           />
         </Form>
 
-        <Button value="Entrar" />
+        <Button value="Entrar" style={{maxWidth: 270, marginTop: 42}}/>
 
         <Footer>
           <LinkText>Esqueceu sua Senha? </LinkText>

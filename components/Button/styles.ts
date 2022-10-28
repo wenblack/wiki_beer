@@ -5,7 +5,7 @@ export const Background = styled.TouchableOpacity`
   display: flex;
   font-size: 16px;
   padding: 12px 16px;
-  width: 270px;
+  width: 100%;
   padding: 16px;
   background: #feae00;
   border-radius: 4px;
@@ -14,7 +14,6 @@ export const Background = styled.TouchableOpacity`
   align-items: center;
   min-height: 42px;
   max-height: 48px;
-  margin-top: 42px;
 `;
 
 export const TextButton = styled.Text`

@@ -21,3 +21,10 @@ background: #FFFFFF;
 border: 1px solid rgba(128, 128, 128, 0.68);
 border-radius: 44px;
 `
+export const ButtonContainer = styled.View `
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+`

@@ -1,7 +1,9 @@
 import { Text } from 'react-native';
-import { BeerImage } from '../BeerImage';
+import { BeerList } from '../BeerList';
+import { Button } from '../Button';
+
 import { Icon } from '../Icon';
-import {ContainerView, SearchView} from './styles'
+import {ContainerView, SearchView, ButtonContainer} from './styles'
 
 
 export function Header() {
@@ -28,7 +30,18 @@ export function Header() {
           }}
           />
     </ContainerView>
-    <BeerImage></BeerImage>
+    
+    <ButtonContainer>
+      <Button value='LAGER' style={{width:130}}/> 
+      <Button value='TRIGO' style={{width:130}}/>
+    </ButtonContainer>
+         
+    <ButtonContainer>
+      <Button value='IPA' style={{width:130}}/> 
+      <Button value='SESSION IPA' style={{width:130}}/>
+    </ButtonContainer>
+    
+    <BeerList></BeerList>
     </>
   );
 }

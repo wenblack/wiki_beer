@@ -31,7 +31,7 @@ export function Routes() {
             } else if (route.name === "WIki") {
               return <FontAwesome5 name="newspaper" size={32} color={color} />;
             } else if (route.name === "Account") {
-              return <Feather name={"user"} size={32} color={color} />;
+              return <Feather name='user' size={32} color={color} />;
             }
           },
           tabBarInactiveTintColor: "#202024",

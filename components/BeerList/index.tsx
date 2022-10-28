@@ -1,0 +1,46 @@
+import { Amstel } from "../../utils/logos/Amstel";
+import { Becks } from "../../utils/logos/Becks";
+import { Eisenbahn } from "../../utils/logos/Eisenbahn";
+import { Heineken } from "../../utils/logos/Heineken";
+import { Stella } from "../../utils/logos/Stella";
+import {ScrollListBeerSm } from './styles'
+
+const styleSvg = {
+    border:0.5, 
+    borderStyle:'solid' ,
+    borderColor:'rgba(128, 128, 128, 0.60)',
+    borderRadius:15,
+    padding:15,
+    marginRight :15
+  }
+export function BeerList() {        
+    return (
+        < ScrollListBeerSm  horizontal >
+            <Heineken 
+                svgHeight={129}
+                svgWidth={147}
+                style={styleSvg}
+            />
+            <Stella 
+                svgHeight={129}
+                svgWidth={147}
+                style={styleSvg}
+            />
+            <Becks
+                svgHeight={129}
+                svgWidth={147}
+                style={styleSvg} 
+            />
+            <Amstel
+                svgHeight={129}
+                svgWidth={147}
+                style={styleSvg} 
+            />
+            <Eisenbahn 
+                svgHeight={129}
+                svgWidth={147}
+                style={styleSvg}
+            />
+        </ScrollListBeerSm>
+      );
+}
